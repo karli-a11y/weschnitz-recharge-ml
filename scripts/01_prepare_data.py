@@ -1,7 +1,7 @@
 """Build the two input tables of the study as CSV files in data/.
 
 Part of the analysis pipeline for:
-    Holler JK, Rausch R: Machine-learning-based estimation of groundwater
+    Rausch R, Holler JK: Machine-learning-based estimation of groundwater
     recharge from land use in a small crystalline catchment of the Odenwald
     Mountains, Germany.
 

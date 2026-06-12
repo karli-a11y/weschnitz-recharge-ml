@@ -1,7 +1,7 @@
 """Bootstrap robustness of the SHAP feature ranking.
 
 Part of the analysis pipeline for:
-    Holler JK, Rausch R: Machine-learning-based estimation of groundwater
+    Rausch R, Holler JK: Machine-learning-based estimation of groundwater
     recharge from land use in a small crystalline catchment of the Odenwald
     Mountains, Germany.
 
