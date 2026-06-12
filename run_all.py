@@ -13,6 +13,7 @@ Runs all seven analysis scripts in order:
     05  100 %-land-use counterfactuals
     06  bootstrap robustness of the SHAP ranking  (~ a few minutes)
     07  plausibility-filter sensitivity           (~ several minutes)
+    08  nesting (spatial-independence) robustness check
 
 Usage
 -----
@@ -46,6 +47,7 @@ STEPS = [
     "scripts/05_counterfactual.py",
     "scripts/06_bootstrap_shap.py",
     "scripts/07_filter_sensitivity.py",
+    "scripts/08_nesting_check.py",
 ]
 
 

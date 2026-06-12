@@ -108,6 +108,11 @@ def fig03_momnq_trend() -> None:
     (manuscript Fig. 2)."""
     df = pd.read_csv(DATA / "momnq_timeseries.csv")
     mk_res = mk.original_test(df["momnq_mm_per_year"].values)
+    # Robustness against serial correlation (value cited in the manuscript):
+    mk_hr = mk.hamed_rao_modification_test(df["momnq_mm_per_year"].values)
+    print(f"Mann-Kendall (original):  trend = {mk_res.trend}, p = {mk_res.p:.4f}, "
+          f"Sen slope = {mk_res.slope:.2f} mm/a/yr")
+    print(f"Mann-Kendall (Hamed-Rao): trend = {mk_hr.trend}, p = {mk_hr.p:.4f}")
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.plot(df["hydrological_year"], df["momnq_mm_per_year"], "o-", lw=1, ms=3,
             color="#1f77b4", label="MoMNQ (Wundt 1958)")

@@ -12,7 +12,9 @@ discharge measurements from the upper Weschnitz catchment (43.79 km²,
 gauge Fahrenbach) to estimate groundwater recharge from land-use
 composition, topography and precipitation, and explains the fitted models
 with permutation importance, SHAP values, partial dependence,
-100 %-land-use counterfactuals and a bootstrap robustness analysis.
+100 %-land-use counterfactuals, a bootstrap robustness analysis and
+sensitivity checks for the plausibility filter and the spatial nesting
+of the sub-catchments.
 
 ## Quick start
 
@@ -56,6 +58,7 @@ scripts/
   05_counterfactual.py         100 %-land-use counterfactual predictions
   06_bootstrap_shap.py         bootstrap robustness of the SHAP ranking
   07_filter_sensitivity.py     plausibility-filter sensitivity analysis
+  08_nesting_check.py          nesting (spatial-independence) robustness check
 results/              metrics, predictions, model artefacts (generated)
 figures/              publication figures, PDF + PNG (generated)
 ```
